@@ -7,11 +7,11 @@ variale
 =================================================================
 */
 :root {
-  --main-color: #ff4757;
-  --black: #000;
-  --dark: #212529;
-  --white: #fff;
-  --transition: 0.5s all;
+    --main-color: #ff4757;
+    --black: #000;
+    --dark: #212529;
+    --white: #fff;
+    --transition: 0.5s all;
 }
 
 /*
@@ -21,15 +21,15 @@ reset default css
 */
 
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  outline: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
-  line-height: 1.5;
+    font-family: "Roboto", sans-serif;
+    line-height: 1.5;
 }
 
 /*
@@ -39,75 +39,75 @@ repated css initialize
 */
 
 .pt-90 {
-  padding-top: 90px;
+    padding-top: 90px;
 
 }
 
 .pb-90 {
-  padding-bottom: 90px;
+    padding-bottom: 90px;
 }
 
 .pb-45 {
-  padding-bottom: 45px;
+    padding-bottom: 45px;
 }
 
 .btn {
-  border-radius: 0;
+    border-radius: 0;
 }
 
 .text-brand {
-  color: var(--main-color);
+    color: var(--main-color);
 }
 
 img {
-  width: 100%;
+    width: 100%;
 }
 
 p {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 27px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
 }
 
 .btn-danger {
-  background-color: var(--main-color);
-  border: 2px solid var(--main-color);
+    background-color: var(--main-color);
+    border: 2px solid var(--main-color);
 }
 
 .btn-danger:hover {
-  background: transparent;
-  color: var(--main-color);
-  border: 2px solid var(--main-color);
+    background: transparent;
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
 }
 
 .social-media ul li a {
-  margin-right: 10px;
+    margin-right: 10px;
 }
 
 .social-media ul li a i {
-  font-size: 20px;
-  height: 40px;
-  width: 40px;
-  border: 2px solid var(--main-color);
-  line-height: 38px;
-  text-align: center;
-  color: var(--main-color);
-  transition: var(--transition);
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+    border: 2px solid var(--main-color);
+    line-height: 38px;
+    text-align: center;
+    color: var(--main-color);
+    transition: var(--transition);
 }
 
 .social-media ul li a:hover i {
-  transform: rotate(360deg);
+    transform: rotate(360deg);
 }
 
 .section-caption h2 {
-  font-size: 30px;
-  font-weight: 600;
-  color: var(--dark);
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--dark);
 }
 
 .section-caption p {
-  font-size: 18px;
-  color: var(--dark);
+    font-size: 18px;
+    color: var(--dark);
 }
 
 /*
@@ -116,70 +116,70 @@ header
 =================================================================
 */
 .navbar {
-  transition: var(--transition);
-  padding: 20px 0;
+    transition: var(--transition);
+    padding: 20px 0;
 }
 
 .navbar .navbar-brand {
-  font-size: 26px;
-  font-weight: bold;
-  color: var(--white);
+    font-size: 26px;
+    font-weight: bold;
+    color: var(--white);
 }
 
 .navbar .navbar-toggler {
-  box-shadow: none;
-  border-radius: 0;
-  background-color: var(--main-color);
-  color: var(--white);
+    box-shadow: none;
+    border-radius: 0;
+    background-color: var(--main-color);
+    color: var(--white);
 }
 
 .navbar .navbar-nav .nav-item {
-  margin: 0 8px;
+    margin: 0 8px;
 }
 
 .navbar-nav .nav-item .nav-link {
-  color: var(--white);
-  font-size: 16px;
-  text-transform: capitalize;
-  letter-spacing: 0.5px;
-  transition: var(--transition);
+    color: var(--white);
+    font-size: 16px;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+    transition: var(--transition);
 }
 
 .navbar-nav .nav-item .nav-link.active {
-  color: var(--main-color) !important;
+    color: var(--main-color) !important;
 }
 
 .navbar-nav .nav-item .nav-link:hover {
-  color: var(--main-color);
+    color: var(--main-color);
 }
 
 .fa-bars-staggered {
-  transition: var(--transition);
+    transition: var(--transition);
 }
 
 .fa-bars-staggered.fa-xmark {
-  transform: rotate(360deg);
+    transform: rotate(360deg);
 }
 
 
 /* sticky navbar */
 .navbar.navbg {
-  transition: var(--transition);
-  padding: 10px 0;
-  background-color: var(--white);
-  box-shadow: 0 0.125rem 0.25rem rgba(var(--bs-body-color-rgb), 0.075) !important;
+    transition: var(--transition);
+    padding: 10px 0;
+    background-color: var(--white);
+    box-shadow: 0 0.125rem 0.25rem rgba(var(--bs-body-color-rgb), 0.075) !important;
 }
 
 .navbar.navbg .nav-link {
-  color: var(--black);
+    color: var(--black);
 }
 
 .navbar.navbg .navbar-brand {
-  color: var(--black);
+    color: var(--black);
 }
 
 .navbar-brand::first-letter {
-  color: var(--main-color);
+    color: var(--main-color);
 }
 
 
@@ -191,197 +191,197 @@ banner
 */
 
 .banner {
-  height: 100vh;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  position: relative;
-  color: var(--white);
-  z-index: 1;
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    color: var(--white);
+    z-index: 1;
 }
 
 .banner::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: var(--black);
-  opacity: 0.9;
-  z-index: -1;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--black);
+    opacity: 0.9;
+    z-index: -1;
 }
 
 .banner-fluid {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .banner-item {
-  max-width: 700px;
-  margin: 0 auto;
-  z-index: 99;
+    max-width: 700px;
+    margin: 0 auto;
+    z-index: 99;
 }
 
 .banner-small-image {
-  height: 100px;
-  width: 100px;
-  max-height: 100px;
-  max-width: 100px;
-  border-radius: 50%;
-  margin: auto;
+    height: 100px;
+    width: 100px;
+    max-height: 100px;
+    max-width: 100px;
+    border-radius: 50%;
+    margin: auto;
 }
 
 .banner-small-image img {
-  height: 100px;
-  width: 100px;
-  max-height: 100px;
-  max-width: 100px;
-  border-radius: 50%;
-  margin: auto;
+    height: 100px;
+    width: 100px;
+    max-height: 100px;
+    max-width: 100px;
+    border-radius: 50%;
+    margin: auto;
 }
 
 .banner-info h4 {
-  font-size: 22px;
-  font-weight: 400;
+    font-size: 22px;
+    font-weight: 400;
 }
 
 .banner-info h1 {
-  font-size: 45px;
-  font-weight: 600;
+    font-size: 45px;
+    font-weight: 600;
 }
 
 /* ===============================================================
 about
 ================================================================= */
 .abour-right h4 {
-  font-size: 26px;
-  font-weight: bold;
+    font-size: 26px;
+    font-weight: bold;
 }
 
 /* ===============================================================
 skill
 ================================================================= */
 .progress-bar {
-  background-color: var(--main-color);
+    background-color: var(--main-color);
 }
 
 /* ===============================================================
 services
 ================================================================= */
 .services {
-  background: #f8f9fa;
+    background: #f8f9fa;
 }
 
 .singler-services {
-  padding: 20px 20px;
-  background-color: transparent;
+    padding: 20px 20px;
+    background-color: transparent;
 }
 
 .singler-services i {
-  font-size: 40px;
-  margin: 10px 0;
+    font-size: 40px;
+    margin: 10px 0;
 }
 
 .singler-services h4 {
-  font-weight: 400;
+    font-weight: 400;
 }
 
 .singler-services .services-line {
-  height: 2px;
-  width: 100px;
-  background-color: var(--main-color);
-  margin: 10px auto;
-  transition: var(--transition);
+    height: 2px;
+    width: 100px;
+    background-color: var(--main-color);
+    margin: 10px auto;
+    transition: var(--transition);
 }
 
 .singler-services:hover .services-line {
-  width: 150px;
-  transition: var(--transition);
+    width: 150px;
+    transition: var(--transition);
 }
 
 /* ===============================================================
 client
 ================================================================= */
 .client {
-  background-color: #f8f9fa;
+    background-color: #f8f9fa;
 }
 
 .singler-client {
-  max-width: 600px;
-  margin: 0 auto;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 .singler-client i {
-  font-size: 30px;
-  color: var(--main-color);
-  display: block;
+    font-size: 30px;
+    color: var(--main-color);
+    display: block;
 }
 
 .singler-client img {
-  max-height: 80px;
-  max-width: 80px;
-  height: 80px;
-  width: 80px;
-  border-radius: 50%;
-  margin: 10px auto;
+    max-height: 80px;
+    max-width: 80px;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    margin: 10px auto;
 }
 
 .client-name {
-  color: var(--main-color);
-  font-size: 18px;
+    color: var(--main-color);
+    font-size: 18px;
 }
 
 .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
-  background: var(--main-color);
+    background: var(--main-color);
 }
 
 .owl-theme .owl-dots .owl-dot span {
-  background-color: var(--dark);
+    background-color: var(--dark);
 }
 
 /* ===============================================================
 work
 ================================================================= */
 .single-wrok {
-  position: relative;
+    position: relative;
 }
 
 .work-overly {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 0%;
-  width: 100%;
-  background-color: var(--black);
-  opacity: 0.6;
-  transition: var(--transition);
-  opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0%;
+    width: 100%;
+    background-color: var(--black);
+    opacity: 0.6;
+    transition: var(--transition);
+    opacity: 0;
 }
 
 .work-overly-item {
-  position: absolute;
-  top: 80%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transition: var(--transition);
-  opacity: 0;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: var(--transition);
+    opacity: 0;
 }
 
 .single-wrok:hover .work-overly {
-  height: 100%;
-  opacity: 0.8;
-  transition: var(--transition);
+    height: 100%;
+    opacity: 0.8;
+    transition: var(--transition);
 }
 
 .single-wrok:hover .work-overly-item {
-  top: 50%;
-  transition: var(--transition);
-  opacity: 1;
+    top: 50%;
+    transition: var(--transition);
+    opacity: 1;
 }
 
 
@@ -389,20 +389,25 @@ work
 blog
 ================================================================= */
 .blgo-info .blog-tittle {
-  text-decoration: none;
-  font-size: 20px;
-  font-weight: bold;
-  color: var(--black);
-  transition: var(--transition);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--black);
+    transition: var(--transition);
 }
 
 .blgo-info .blog-tittle:hover {
-  color: var(--main-color);
-  transition: var(--transition);
+    color: var(--main-color);
+    transition: var(--transition);
 }
 
 .single-blog i {
-  color: var(--main-color);
+    color: var(--main-color);
+}
+
+.single-blog.shadow img {
+    max-height: 272px;
+    height: 272px;
 }
 
 
@@ -411,13 +416,13 @@ blog
 contact
 ================================================================= */
 .contact {
-  background-color: #f8f9fa;
+    background-color: #f8f9fa;
 }
 
 .form-control:focus {
-  box-shadow: none;
-  border-color: var(--main-color);
-  border-radius: 1;
+    box-shadow: none;
+    border-color: var(--main-color);
+    border-radius: 1;
 }
 
 
@@ -426,18 +431,18 @@ contact
 footer
 ================================================================= */
 .footer {
-  background-color: var(--dark);
+    background-color: var(--dark);
 }
 
 .footer-icon ul li a i {
-  border-radius: 50%;
+    border-radius: 50%;
 
 }
 
 .footer-icon ul li a i:hover {
-  background-color: var(--main-color);
-  color: var(--white);
-  border-color: var(--white);
+    background-color: var(--main-color);
+    color: var(--white);
+    border-color: var(--white);
 }
 
 
@@ -447,86 +452,84 @@ responsive media quaaries
 ================================================================= */
 
 @media (max-width: 576px) {
-  .banner-info h1 {
-    font-size: 32px;
+    .banner-info h1 {
+        font-size: 32px;
 
-  }
+    }
 }
 
 @media (max-width: 768px) {
-  .navbar {
+    .navbar {
 
-    padding: 10px 0;
-    background-color: var(--white);
-    box-shadow: 0 0.125rem 0.25rem rgba(var(--bs-body-color-rgb), 0.075) !important;
-  }
+        padding: 10px 0;
+        background-color: var(--white);
+        box-shadow: 0 0.125rem 0.25rem rgba(var(--bs-body-color-rgb), 0.075) !important;
+    }
 
-  .navbar .navbar-nav .nav-item .nav-link {
-    color: var(--black);
-  }
+    .navbar .navbar-nav .nav-item .nav-link {
+        color: var(--black);
+    }
 
-  .navbar .navbar-nav .nav-item .nav-link:hover {
-    color: var(--black);
-  }
+    .navbar .navbar-nav .nav-item .nav-link:hover {
+        color: var(--black);
+    }
 
 
-  .navbar .navbar-brand {
-    color: var(--black);
-  }
+    .navbar .navbar-brand {
+        color: var(--black);
+    }
 }
 
 /* ===============================================================
 color switcher
 ================================================================= */
 .color-switcher {
-  position: fixed;
-  top: 20%;
-  right: -207px;
-  transition: var(--transition);
-  background: var(--white);
-  padding: 5px 5px;
-  z-index: 99;
+    position: fixed;
+    top: 20%;
+    right: -207px;
+    transition: var(--transition);
+    background: var(--white);
+    padding: 5px 5px;
+    z-index: 99;
 }
 
 .color-switcher.showcolorpalate {
-  transition: var(--transition);
-  right: 0;
+    transition: var(--transition);
+    right: 0;
 }
 
 .color-switchericon {
-  height: 40px;
-  width: 40px;
-  background-color: var(--main-color);
-  text-align: center;
-  line-height: 40px;
-  color: var(--white);
-  cursor: pointer;
-  position: absolute;
-  top: 0;
-  left: -38px;
+    height: 40px;
+    width: 40px;
+    background-color: var(--main-color);
+    text-align: center;
+    line-height: 40px;
+    color: var(--white);
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: -38px;
 }
 
 .colorbtn {
-  height: 40px;
-  width: 40px;
-  cursor: pointer;
-  margin-bottom: 0;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    margin-bottom: 0;
 }
 
 .red {
-  background-color: #EE5A24;
+    background-color: #EE5A24;
 }
 
 .green {
-  background-color: #009432;
+    background-color: #009432;
 }
 
 .blue {
-  background-color: #0652DD;
+    background-color: #0652DD;
 }
 
 .yellow {
-  background-color: #FFC312;
+    background-color: #FFC312;
 }
-
-
