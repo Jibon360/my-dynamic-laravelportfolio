@@ -1,24 +1,25 @@
 <?php
 
-use App\Http\Controllers\Backend\AboutController;
-use App\Http\Controllers\Backend\Available;
-use App\Http\Controllers\Backend\BannerController;
-use App\Http\Controllers\Backend\BlogController;
-use App\Http\Controllers\Backend\CategoryController;
-use App\Http\Controllers\Backend\ContactController;
-use App\Http\Controllers\Backend\FooterController;
-use App\Http\Controllers\Backend\LogoController;
-use App\Http\Controllers\Backend\Servicecaptioncontroller;
-use App\Http\Controllers\Backend\ServicesController;
-use App\Http\Controllers\Backend\SkillheadingController;
-use App\Http\Controllers\Backend\SkillsController;
-use App\Http\Controllers\Backend\TestimonyController;
-use App\Http\Controllers\Backend\WorkController;
-use App\Http\Controllers\Frontend\FrontendController;
+use App\Models\Testimony;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
-use App\Models\Testimony;
+use App\Http\Controllers\Backend\Available;
+use App\Http\Controllers\Backend\BlogController;
+use App\Http\Controllers\Backend\LogoController;
+use App\Http\Controllers\Backend\WorkController;
+use App\Http\Controllers\Backend\AboutController;
+use App\Http\Controllers\Backend\BannerController;
+use App\Http\Controllers\Backend\FooterController;
+use App\Http\Controllers\Backend\SkillsController;
+use App\Http\Controllers\Backend\ContactController;
+use App\Http\Controllers\Backend\CategoryController;
+use App\Http\Controllers\Backend\ServicesController;
+use App\Http\Controllers\Backend\TestimonyController;
+use App\Http\Controllers\Frontend\FrontendController;
+use App\Http\Controllers\SocialShareButtonsController;
+use App\Http\Controllers\Backend\SkillheadingController;
+use App\Http\Controllers\Backend\Servicecaptioncontroller;
 
 /*
 |--------------------------------------------------------------------------
@@ -40,7 +41,7 @@ Route::controller(FrontendController::class)->group(function () {
     Route::get('/', 'index')->name('frontpage');
     Route::get('single/blog/{id}','singleblog')->name('single.blog');
 });
-
+Route::get('/social-media-share', [SocialShareButtonsController::class, 'ShareWidget']);
 Auth::routes();
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

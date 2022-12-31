@@ -26,8 +26,11 @@
                         <h4><i class="fa-solid fa-share text-brand"></i> Share this post</h4>
                         <div class="singe-view-icon">
                             <ul class="list-inline">
-                                <li class="list-inline-item"><a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                                <li class="list-inline-item"><a class="social-button"
+                                        href="https://www.facebook.com/sharer/sharer.php?u=http://jorenvanhocht.be"><i
+                                            class="fa-brands fa-facebook-f"></i></a>
                                 </li>
+                          
                                 <li class="list-inline-item"><a href=""><i class="fa-brands fa-twitter"></i></a>
                                 </li>
                                 <li class="list-inline-item"><a href=""><i class="fa-brands fa-pinterest"></i></a>
@@ -35,6 +38,8 @@
                                 <li class="list-inline-item"><a href=""><i
                                             class="fa-brands fa-google-plus-g"></i></a>
                                 </li>
+                                <li><a href="" class=" " id=""><span
+                                            class="fa fa-facebook-official"></span></a></li>
                             </ul>
                         </div>
                     </div>
