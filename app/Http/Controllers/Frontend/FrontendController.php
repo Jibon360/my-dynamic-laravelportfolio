@@ -2,20 +2,21 @@
 
 namespace App\Http\Controllers\Frontend;
 
+use App\Models\Blog;
 use App\Models\Logo;
+use App\Models\Work;
+use App\Models\About;
+use App\Models\Skill;
 use App\Models\Banner;
+use App\Models\Footer;
+use App\Models\Contact;
+use App\Models\Service;
+use App\Models\Category;
+use App\Models\Testimony;
+use App\Models\Skillheading;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Models\About;
-use App\Models\Blog;
-use App\Models\Category;
-use App\Models\Contact;
-use App\Models\Footer;
-use App\Models\Service;
-use App\Models\Skill;
-use App\Models\Skillheading;
-use App\Models\Testimony;
-use App\Models\Work;
+use Spatie\QueryBuilder\QueryBuilder;
 
 class FrontendController extends Controller
 {
@@ -54,5 +55,19 @@ class FrontendController extends Controller
         $relatedblogs = Blog::with('categories')->where('category_id', $singleblog->category_id)->where('id', '!=', $singleblog->id)->get();
 
         return view('frontend.pages.single_blgo', compact(['logo', 'banner', 'about', 'skillheading', 'skills', 'services', 'testimonies', 'wroks', 'footer', 'contacts', 'blogs', 'categories', 'recentblogs', 'singleblog', 'relatedblogs']));
+    }
+
+    public function searchblog()
+    {
+        $logo = Logo::latest()->first();
+        $contacts = Contact::latest()->get();
+        $footer = Footer::latest()->first();
+
+
+        $serachresutl = QueryBuilder::for(Blog::class)
+            ->allowedFilters(['blog_bigheading'])
+            ->get();
+
+            return view('frontend.pages.search',compact(['serachresutl','logo', 'contacts', 'footer']));
     }
 }

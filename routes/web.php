@@ -39,7 +39,8 @@ use App\Http\Controllers\Backend\Servicecaptioncontroller;
 // frontend controller
 Route::controller(FrontendController::class)->group(function () {
     Route::get('/', 'index')->name('frontpage');
-    Route::get('single/blog/{id}','singleblog')->name('single.blog');
+    Route::get('single/blog/{id}', 'singleblog')->name('single.blog');
+    Route::get('search/blog', 'searchblog')->name('searchblog');
 });
 Route::get('/social-media-share', [SocialShareButtonsController::class, 'ShareWidget']);
 Auth::routes();

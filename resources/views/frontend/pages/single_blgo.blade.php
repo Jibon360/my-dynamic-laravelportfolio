@@ -49,11 +49,11 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <div>
-                                <form action="" method="get">
+                                <form action="{{ route('searchblog') }}" method="get">
                                     <div class="input-group mb-3">
-                                        <input type="text" class="form-control rounded-0" placeholder="search.."
+                                        <input type="text" name="filter[blog_bigheading]" class="form-control rounded-0" placeholder="search.."
                                             aria-label="Recipient's username" aria-describedby="button-addon2">
-                                        <button class="btn btn-danger" type="button" id="button-addon2"><i
+                                        <button class="btn btn-danger"  id="button-addon2"><i
                                                 class="fa-solid fa-magnifying-glass"></i></button>
                                     </div>
                                 </form>
@@ -80,6 +80,7 @@
                                         </div>
                                     </div>
                                 @empty
+                                <p class="text-brand">no resutl found</p>
                                 @endforelse
                                 <!-- single recent view end -->
 
