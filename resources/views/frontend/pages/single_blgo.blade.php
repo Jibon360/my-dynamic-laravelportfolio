@@ -30,7 +30,7 @@
                                         href="https://www.facebook.com/sharer/sharer.php?u=http://jorenvanhocht.be"><i
                                             class="fa-brands fa-facebook-f"></i></a>
                                 </li>
-                          
+
                                 <li class="list-inline-item"><a href=""><i class="fa-brands fa-twitter"></i></a>
                                 </li>
                                 <li class="list-inline-item"><a href=""><i class="fa-brands fa-pinterest"></i></a>
