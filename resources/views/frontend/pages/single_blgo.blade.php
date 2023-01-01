@@ -51,7 +51,7 @@
                             <div>
                                 <form action="{{ route('searchblog') }}" method="get">
                                     <div class="input-group mb-3">
-                                        <input type="text" name="filter[blog_bigheading]" class="form-control rounded-0" placeholder="search.."
+                                        <input required type="text" name="filter[blog_bigheading]" class="form-control rounded-0" placeholder="search.."
                                             aria-label="Recipient's username" aria-describedby="button-addon2">
                                         <button class="btn btn-danger"  id="button-addon2"><i
                                                 class="fa-solid fa-magnifying-glass"></i></button>
